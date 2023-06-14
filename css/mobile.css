@@ -42,6 +42,8 @@ main {
     border-radius: 1.25em;
     overflow: hidden;
     box-shadow: 0.125em 0.125em 0.25em rgba(94, 78, 18, 0.363);
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease-in-out;
 }
 
 
