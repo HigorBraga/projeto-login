@@ -3,12 +3,13 @@
 
 @media screen and (min-width: 48em) and (max-width: 62em) {
     body {
-        background-image: linear-gradient(to bottom, var(--cor02), var(--cor04));
+        background-image: linear-gradient(to top, #06040f, #063b49, #4f6b6f, #5ba361 #1b472c);
     }
 
 
     #container {
         width: 80vw;
+        height: 18.75em;
     }
 
 
@@ -28,13 +29,14 @@
 
 @media screen and (min-width: 62em) {
     body {
-        background-image: linear-gradient(to right, var(--cor02), var(--cor04));
+        background-image: linear-gradient(to bottom, #06040f, #063b49, #4f6b6f, #5ba361, #1b472c);
     }
 
 
 
     #container {
         width: 59.375em;
+        height: 21.875em;
     }
 
 
@@ -56,6 +58,6 @@
 
 
     p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }

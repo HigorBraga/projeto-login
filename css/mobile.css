@@ -3,11 +3,11 @@
 
 
 :root {
-    --cor01: #e3c86f;
-    --cor02: #DEB52A;
-    --cor03: #AB8B20;
-    --cor04: #5E4D12;
-    --cor05: #5E532E;
+    --cor01: #144673;
+    --cor02: #a68217;
+    --cor03: #f2bf27;
+    --cor04: #735112;
+    --cor05: #f2f2f2;
 }
 
 * {
@@ -18,7 +18,10 @@
 
 
 html, body {
-    background-color: var(--cor03);
+    background-image: url(/images/aurora-boreal-suecia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
 }
@@ -41,7 +44,7 @@ main {
     height: 32.188em;
     border-radius: 1.25em;
     overflow: hidden;
-    box-shadow: 0.125em 0.125em 0.25em rgba(94, 78, 18, 0.363);
+    box-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.363);
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease-in-out;
 }
@@ -81,10 +84,16 @@ p {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    background-color: var(--cor01);
+    background-color: #063b49;
     border-radius: 0.313em;
     margin: 0.313em 0em;
     padding: 0.625em;
+}
+
+
+.material-symbols-outlined {
+    font-size: 2em;
+    margin-left: -0.313em;
 }
 
 
@@ -93,12 +102,18 @@ label {
 }
 
 
- input {
+input {
     font-size: 1em;
+    background-color: #4f6b6f;
     width: 100%;
     padding: 0.625em;
     border: none;
     border-radius: 0.313em;
+ }
+
+
+ input::placeholder {
+    color: #fff;
  }
 
 
@@ -118,7 +133,7 @@ label {
     width: 100%;
     height: 2em;
     font-size: 1em;
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     color: #fff;
     font-weight: bold;
     border: none;
@@ -133,6 +148,13 @@ label {
 }
 
 
+#entrar:hover {
+    background-color: #5ba361;
+    color: #06040f;
+}
+
+
+
 #esqsenha {
     display: flex;
     flex-direction: row;
@@ -141,8 +163,8 @@ label {
     width: 100%;
     height: 2.5em;
     font-size: 1em;
-    background-color: var(--cor04);
-    color: #fff;
+    background-color: var(--cor01);
+    color: #000;
     font-weight: bold;
     border: none;
     border-radius: 0.313em;
@@ -151,7 +173,12 @@ label {
 }
 
 
-#entrar:hover, #esqsenha:hover {
-    background-color: var(--cor03);
-    color: #000;
+#esqsenha:hover {
+    background-color: #1b472c;
+    color: #fff;
+}
+
+
+#button-email {
+    margin-left: 0;
 }
